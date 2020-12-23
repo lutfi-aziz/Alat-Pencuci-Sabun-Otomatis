@@ -1,15 +1,32 @@
+/*
+ * ---------------------ALAT PENYEMPROT SABUN / HANDZINTIZER OTOMATIS-----------------
+ * DI BUAT = MUHAMMAD LUTFI AZIZ
+ * 
+ *                            --->PROJECT ANGEL <---
+ * YOUTUBE TUTORIAL: https://www.youtube.com/channel/UCbJ5ddQ7PCo74sNRZ7Q48_w
+ * 
+ * 
+ * KOMPONEN ALAT:
+ * 1 Modul Arduino NANO
+ * 2 pcs Servo
+ * 1 Sensor Ultrasonic
+ * Kabel Jumper
+ * 
+ * 
+ */
+ 
 #include <Servo.h>
 #define ECHOPIN 2
 #define TRIGPIN 3
 int pos = 0;
 Servo myservo,servo2;
 
-unsigned int distance;
+unsigned int jarak;
 
 void setup(){
 Serial.begin(9600);
-myservo.attach(9);
-servo2.attach(10);
+myservo.attach(9);  // pin servo A
+servo2.attach(10); // pin servo B
 pinMode(ECHOPIN, INPUT);
 pinMode(TRIGPIN, OUTPUT);
 delay(100);
@@ -32,7 +49,7 @@ delay(5);
 
 void servo(){
 // servo(); 
- if (distance <= 10 )
+ if (jarak <= 10 )
  { 
   delay(700);
   myservo.write(150);
