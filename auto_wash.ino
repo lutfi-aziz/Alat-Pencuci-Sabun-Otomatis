@@ -1,8 +1,19 @@
 /*
- * ALAT PENYEMPROT SABUN / HANDZINTIZER OTOMATIS
+ * ---------------------ALAT PENYEMPROT SABUN / HANDZINTIZER OTOMATIS-----------------
  * DI BUAT = MUHAMMAD LUTFI AZIZ
- * INDONESIA
+ * 
+ *                            --->PROJECT ANGEL <---
+ * YOUTUBE TUTORIAL : https://www.youtube.com/channel/UCbJ5ddQ7PCo74sNRZ7Q48_w
+ * GITHUB           : https://github.com/lutfi-aziz/Alat-Pencuci-Sabun-Otomatis
+ * 
+ * KOMPONEN ALAT:
+ * 1 Modul Arduino NANO
+ * 2 pcs Servo
+ * 1 Sensor Ultrasonic
+ * Kabel Jumper
+ * 
  */
+
 #include <Servo.h>
 #define ECHOPIN 2
 #define TRIGPIN 3
