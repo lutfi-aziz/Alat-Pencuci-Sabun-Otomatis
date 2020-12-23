@@ -52,13 +52,13 @@ void servo(){
  { 
   delay(700);
   myservo.write(150);
-  servo2.write(150);// tell servo to go to position in variable 'pos'
+  servo2.write(150);
   delay(100);  
  }
  else
  {
  // Serial.println("Servo Tutup");
-  myservo.write(0);              // tell servo to go to position in variable 'pos'
+  myservo.write(0); 
   servo2.write(0);
   delay(5); 
  }
